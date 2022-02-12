@@ -1,0 +1,20 @@
+/* стартовая сетка fle в 1 колонку **футер всегда внизу */
+
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+/* ограничевающий контейнер */
+
+[class*="__container"] {
+  min-width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
