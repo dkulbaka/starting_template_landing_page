@@ -1,21 +1,18 @@
-/* стартовая сетка flex в 1 колонку **футер всегда внизу */
-
+/* стартовая сетка flex в 1 колонку */
 .page {
-  overflow: hidden;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
 }
 
+/*  прижимаем футер к низу */
 .main {
-  flex: 1 1 auto;
+  flex: 1; /* тоже что flex-grow: 1; */
 }
 
 /* ограничевающий контейнер */
-
 [class*="__container"] {
-  min-width: 100%;
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
 }
 
