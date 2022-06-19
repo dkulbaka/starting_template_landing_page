@@ -1,10 +1,8 @@
-@charset "UTF-8";
 /* Указываем box sizing */
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
@@ -47,8 +45,7 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Упрощаем работу с изображениями */
@@ -73,47 +70,9 @@ select {
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.3;
-}
-
-/* стартовая сетка flex в 1 колонку */
-.page {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-/*  прижимаем футер к низу */
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  /* тоже что flex-grow: 1; */
-}
-
-/* ограничевающий контейнер */
-[class*=__container] {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-/* Main Style */
