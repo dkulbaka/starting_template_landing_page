@@ -48,6 +48,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+/* Элементы a, у которых есть класс, сбрасываем дефолтные стили */
+a[class] {
+  text-decoration: none;
+}
+
 /* Упрощаем работу с изображениями */
 img {
   max-width: 100%;

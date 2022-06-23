@@ -9,6 +9,6 @@
 
 ---
 
-_проект настрпоен под VS Code_
+_проект настроен под VS Code_
 
-[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+Необходимо установить [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
